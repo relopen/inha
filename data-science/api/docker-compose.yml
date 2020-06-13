@@ -1,0 +1,24 @@
+version: "3.2"
+services:
+  mongodb:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: shoes_a
+    volumes:
+      - type: bind 
+        source: ./data/db
+        target: /data/db
+    container_name: "mongodb"
+    ports:
+      - "27017:27017"
+#   web:
+#     build: .
+#     command: python run.py
+#     ports:
+#         - "3001:3001"
+#     volumes:
+#         - .:/app
+#     links:
+#         - mongodb
