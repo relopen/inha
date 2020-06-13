@@ -1,0 +1,37 @@
+.select-container {
+    display: inline-block;
+}
+
+.select {
+    display: inline-block;
+    height: 42px;
+    padding-right: 0;
+
+    strong {
+        float: left;
+        margin-top: 6px;
+        color: #2b2b2b;
+        font-weight: 700;
+        font-size: 20px;
+        font-family: Noto Sans KR,sans-serif;    
+    }
+
+    p {
+        float: left;
+        margin: 18px 4px 0;
+        font-size: 11px;
+        letter-spacing: .05em;
+    }
+}
+
+
+.arrow {
+    display: inline-block;
+    height: 42px;
+    width: 13px;
+    padding: 0 8px;
+    background: url(https://cdn.upbit.com/images/ico_select_1.f7515c4.png) center 18px no-repeat;
+    overflow: hidden;
+    text-indent: -999em;
+    vertical-align: top;
+}

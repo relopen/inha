@@ -1,13 +1,137 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700);
+
+@font-face {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 100;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format("opentype")
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format("opentype")
+}
+
+@font-face {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format("opentype")
+}
+
+@font-face {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format("opentype")
+}
+
+@font-face {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format("opentype")
+}
+
+@font-face {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 900;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format("opentype")
+}
+
+a,abbr,acronym,body,caption,cite,code,dd,del,dfn,div,dl,dt,em,embed,fieldset,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,label,legend,li,object,ol,p,pre,q,s,samp,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,u,ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit
+}
+
+body {
+  /* background: #fff; */
+  background-color: #e9ecf1;
+  color: #2b2b2b;
+  font: normal 12px Droid Sans,AppleSDGothicNeo-Regular,Malgun Gothic,Dotum,sans-serif
+}
+
+img {
+  border: 0;
+  vertical-align: top
+}
+
+a {
+  color: #2b2b2b
+}
+
+a,a:active,a:visited {
+  text-decoration: none
+}
+
+a:hover {
+  text-decoration: underline
+}
+
+input,select {
+  font-size: 100%;
+  vertical-align: middle
+}
+
+li,ol,ul {
+  list-style: none
+}
+
+blockquote,fieldset,iframe {
+  border: none
+}
+
+cite,em,i,u {
+  font-style: normal
+}
+
+h1,h2,h3,h4,h5 {
+  clear: both;
+  font-family: Noto Sans KR,sans-serif,AppleSDGothicNeo-Regular,Malgun Gothic,Dotum;
+  font-weight: 700
+}
+
+caption,legend {
+  display: none;
+  clear: both
+}
+
+form {
+  display: inline
+}
+
+::-ms-clear,input[type=text]::-ms-clear {
+  display: none
+}
+
+table {
+  table-layout: fixed;
+  border-spacing: 0
+}
+
+table,td,th {
+  border-collapse: collapse
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+.up {
+  color: #d60000 !important;
+}
+.down {
+  color: #0051c7 !important;
 }

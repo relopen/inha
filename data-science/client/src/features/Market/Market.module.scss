@@ -1,0 +1,120 @@
+.market {
+    position: relative;
+    display: block;
+    padding: 18px 20px 14px;
+    overflow: hidden;
+
+    .left {
+        float: left;
+        width: 320px;
+    }
+
+    .right {
+        float: right;
+        width: 490px;
+    }
+
+    .current {
+        span {
+            display: block;
+            letter-spacing: 1px;
+
+            strong {
+                display: inline-block;
+                font-size: 16px;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+
+            em {
+                display: inline-block;
+                margin: 0 4px 0 2px;
+                font-size: 14px;
+            }
+
+            p {
+                display: inline-block;
+                color: #2b2b2b;            
+
+                &.tit {
+                    margin-right: 4px;
+                    line-height: 19px;
+                    color: #666;
+                    font-size: 11px;
+                    font-family: Dotum,Noto Sans KR,sans-serif;
+                    letter-spacing: 0;
+                    vertical-align: top;
+                }
+            }
+        }
+        span.first {
+            margin: -6px 0 2px;
+            strong {
+                font-size: 32px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .history {
+        dl {
+            float: left;
+            width: 230px;
+            margin-left: 20px;
+            overflow: hidden;
+
+            &.first {
+                width: 210px;
+                margin-left: 30px;
+
+                dt {
+                    width: 16%;
+                }
+
+                dd {
+                    width: 84%;
+                }
+            }
+
+            &:first-child + dd,
+            dd:nth-child(2),
+            dt:first-child
+            {
+                margin-bottom: 9px;
+                padding-bottom: 9px;
+                border-bottom: 1px solid #e3e5ec;    
+            }
+
+            dt {
+                float: left;
+                width: 35%;
+                height: 18px;
+                line-height: 18px;
+                color: #2b2b2b;
+                font-family: Dotum,Noto Sans KR,sans-serif;
+            }
+
+            dd {
+                float: left;
+                width: 65%;
+                height: 18px;
+                line-height: 18px;
+                letter-spacing: 1px;
+                text-align: right;
+                word-break: break-all;
+
+                strong {
+                    display: inline-block;
+                    font-size: 14px;
+                }
+
+                i {
+                    display: inline-block;
+                    color: #999;
+                    font-size: 11px;
+                    letter-spacing: .05em;
+                }
+            }
+        }
+    }
+}

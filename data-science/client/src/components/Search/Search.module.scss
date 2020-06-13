@@ -1,0 +1,41 @@
+.Search {
+    position: relative;
+    width: 377px;
+    height: 26px;
+    padding: 8px 9px 8px 14px;
+    overflow: hidden;
+
+    input {
+        float: left;
+        width: 351px;
+        height: 26px;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        border: 0;
+        line-height: 26px;
+        color: #2b2b2b;
+        font-weight: 700;
+        font-family: Dotum,Noto Sans KR,sans-serif;
+    }
+
+    a.btn-clear {
+        position: absolute;
+        top: 15px;
+        right: 45px;
+        width: 11px;
+        height: 10px;
+        background: url(https://cdn.upbit.com/images/ico_x.f838fd5.png) 0 0 no-repeat;
+        overflow: hidden;
+        text-indent: -999em;
+    }
+    a.btn-search {
+        float: left;
+        display: block;
+        width: 26px;
+        height: 26px;
+        background: url(https://cdn.upbit.com/images/bg.7521805.png) -90px 0 no-repeat;
+        overflow: hidden;
+        text-indent: -999em;
+    }
+}
