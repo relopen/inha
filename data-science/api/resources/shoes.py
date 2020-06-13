@@ -2,9 +2,12 @@ import json
 
 from flask import Response, request
 from flask_restful import Resource, reqparse
+
 from sdk.list import getShoeses
 from sdk.orderbooks import getOrderBooks
 from sdk.markettx import getMarketTx
+
+from .errors import InternalServerError
 
 def getQuery():
     parser = reqparse.RequestParser()
@@ -21,7 +24,7 @@ class ShoesesApi(Resource):
             shoeses = getShoeses()
             return Response(json.dumps(shoeses), mimetype="application/json", status=200)
         except Exception:
-            raise InterruptedError
+            raise InternalServerError
 
 
 class ShoesOrderBooksApi(Resource):
