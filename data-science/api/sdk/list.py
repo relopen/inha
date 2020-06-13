@@ -4,10 +4,10 @@ def _getPayload():
     return {
         "subject": "SNEAKERS",
         "page": 1 ,
-        "limit": 32,
+        "limit": 50,
     }
 
-def getShoesList():
+def getShoeses():
     return call("https://xxblue.com/product_list", 
                 method="GET", 
                 query=_getPayload(), 

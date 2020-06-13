@@ -1,9 +1,10 @@
 from sdk.utils import call
 
-def _getPayload(productId):
+def _getPayload(productId, size):
     return {
         "page": 1 ,
         "limit": 40,
+        "option": size,
         "productId": productId,
     }
 
@@ -13,8 +14,8 @@ urls = {
     "domestic": "https://xxblue.com/domestic-market-tx-ajax",
 }
 
-def getMarketTx(type, productId):
+def getMarketTx(type, productId, size):
     return call(urls[type], 
                 method="POST", 
-                query=_getPayload(productId), 
+                query=_getPayload(productId, size), 
                 keys={ "result": "data", "total": "recordsTotal" })
