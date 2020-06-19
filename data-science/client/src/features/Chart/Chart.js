@@ -32,12 +32,6 @@ const Chart = () => {
       xlabels,
       dataset,
     });
-
-    console.log(xlabels);
-    console.log(dataset);
-
-    // xlabels.reverse();
-    // dataset.reverse();
   }
   return (
     <span className={styles["chart"]}>
