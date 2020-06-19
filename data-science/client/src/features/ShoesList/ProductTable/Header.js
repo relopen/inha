@@ -19,7 +19,7 @@ const Header = () => {
       </colgroup>
       <thead>
         <tr>
-          <th colspan="4">
+          <th colSpan={4}>
             <a>한글명</a>
           </th>
           <th>

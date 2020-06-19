@@ -11,7 +11,7 @@ const Tab = ({ current, options, onClick }) => {
     <ul className={styles["Tab"]}>
       {options.map((option) => {
         return (
-          <li>
+          <li key={option.title}>
             <a
               href="#"
               className={current === option.key ? styles["on"] : ""}

@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import style from "./ArticleSelect.module.scss";
 
-const ArticleSelect = ({ thumb, title, description, arrow, onClick }) => {
+const sizes = [];
+for (let i = 255; i <= 300; i += 5) {
+  sizes.push(i);
+}
+
+const ArticleSelect = ({
+  thumb,
+  title,
+  description,
+  shoesSize,
+  arrow,
+  onClick,
+  onChange,
+}) => {
   return (
     <div className={style["select-container"]}>
       <a
@@ -20,6 +33,24 @@ const ArticleSelect = ({ thumb, title, description, arrow, onClick }) => {
         )}
         <strong>{title}</strong>
         {description && <p>{description}</p>}
+        {shoesSize && (
+          <select
+            value={shoesSize}
+            onChange={(e) => {
+              if (onChange) {
+                onChange(e);
+              }
+            }}
+          >
+            {sizes.map((size) => {
+              return (
+                <option key={`select-size-${size}`} value={size}>
+                  {size}
+                </option>
+              );
+            })}
+          </select>
+        )}
       </a>
       {arrow && (
         <a

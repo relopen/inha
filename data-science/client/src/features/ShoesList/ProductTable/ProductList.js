@@ -43,7 +43,7 @@ const ProductList = () => {
       <tbody>
         {shoeses?.map((row) => {
           return (
-            <tr>
+            <tr key={row.id}>
               <td>
                 <span className={styles["thumb"]}>
                   <a
