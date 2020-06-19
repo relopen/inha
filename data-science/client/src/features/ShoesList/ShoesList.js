@@ -12,7 +12,13 @@ import styles from "./ShoesList.module.scss";
 
 const ShoesList = () => {
   const dispatch = useDispatch();
-  const filterText = useSelector((state) => state.shoeses.filterText);
+  const { filterText, shoes, shoeses } = useSelector((state) => {
+    return {
+      filterText: state.shoeses.filterText,
+      shoeses: state.shoeses.shoeses,
+      shoes: state.shoes.shoes,
+    };
+  });
 
   const setFilterText = (text: string) => {
     dispatch(actions.shoeses.setFilterText(text));
@@ -21,6 +27,12 @@ const ShoesList = () => {
   useEffect(() => {
     dispatch(actions.shoeses.fetchShoeses());
   }, []);
+
+  useEffect(() => {
+    if (shoeses && shoeses.length > 0 && !shoes) {
+      dispatch(actions.shoes.fetchShoes(shoeses[0]));
+    }
+  }, [shoeses, shoes]);
 
   return (
     <article>
