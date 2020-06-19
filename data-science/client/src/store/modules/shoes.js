@@ -29,7 +29,7 @@ const slice = createSlice({
   },
 });
 
-const fetchShoes = (data, size) => async (dispatch) => {
+const fetchShoes = (data, size = 270) => async (dispatch) => {
   if (!data) {
     return;
   }
@@ -56,7 +56,7 @@ const fetchShoes = (data, size) => async (dispatch) => {
   }
 };
 
-const changeShoesSize = (size) => async (dispatch, getState) => {
+const changeShoesSize = (size = 270) => async (dispatch, getState) => {
   const state = getState();
 
   const data = state.shoes.shoes.model;
