@@ -8,12 +8,19 @@ import Market from "../Market/Market";
 import Chart from "../Chart/Chart";
 
 import styles from "./Quote.module.scss";
+import { useSelector } from "react-redux";
 
 const Quote = () => {
+  const state = useSelector((state) => state.shoes.shoes);
+
   return (
     <article>
       <ArticleHeader>
-        <ArticleSelect title="조던 오프화이트" description="260" arrow />
+        <ArticleSelect
+          title={state?.model.name}
+          description={state?.size}
+          arrow
+        />
         <div className={styles["Article_Header_Tab"]}>
           <Tab
             current="tx"
