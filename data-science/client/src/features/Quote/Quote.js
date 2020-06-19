@@ -17,6 +17,7 @@ const Quote = () => {
     <article>
       <ArticleHeader>
         <ArticleSelect
+          thumb={state?.model.thumbnail}
           title={state?.model.name}
           description={state?.size}
           arrow

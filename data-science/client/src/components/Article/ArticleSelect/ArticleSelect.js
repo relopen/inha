@@ -2,7 +2,7 @@ import React from "react";
 
 import style from "./ArticleSelect.module.scss";
 
-const ArticleSelect = ({ title, description, arrow, onClick }) => {
+const ArticleSelect = ({ thumb, title, description, arrow, onClick }) => {
   return (
     <div className={style["select-container"]}>
       <a
@@ -13,6 +13,11 @@ const ArticleSelect = ({ title, description, arrow, onClick }) => {
           e.stopPropagation();
         }}
       >
+        {thumb && (
+          <em>
+            <img width={26} height={26} src={thumb} alt={thumb} />
+          </em>
+        )}
         <strong>{title}</strong>
         {description && <p>{description}</p>}
       </a>
