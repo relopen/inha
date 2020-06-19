@@ -4,7 +4,7 @@ import math
 
 def _caller(method, url, query):
     if method == "GET":
-        r = requests.get(url, params=json.dumps(query), headers={'Content-Type': 'application/json'})
+        r = requests.get(url, params=query, headers={'Content-Type': 'application/json'})
     else:
         r = requests.post(url, data=json.dumps(query), headers={'Content-Type': 'application/json'})
     return r
@@ -20,7 +20,6 @@ def call(url, **options):
             all_page = options['limit'] if all_page > options['limit'] else all_page
     except:
         pass
-
     for index in range(2, all_page + 1):
         query['page'] = index
         result = _caller(options['method'], url, query).json()

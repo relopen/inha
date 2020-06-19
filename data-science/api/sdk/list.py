@@ -3,7 +3,7 @@ from sdk.utils import call
 def _getPayload():
     return {
         "subject": "SNEAKERS",
-        "page": 1 ,
+        "page": 1,
         "limit": 50,
     }
 

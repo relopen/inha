@@ -12,6 +12,7 @@ const Search = ({ value, onChange, onClear }) => {
         type="text"
         placeholder="코인명/심볼검색"
         value={value}
+        onChange={onChange}
       />
       {value && (
         <a

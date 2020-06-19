@@ -14,7 +14,7 @@ def getQuery():
     parser.add_argument('size', store_missing=False)
     args = parser.parse_args()
     return {
-        "size": args.get("size", 270)
+        "size": int(args.get("size", 270))
     }
 
 

@@ -11,26 +11,22 @@ const Header = () => {
     <table>
       <colgroup>
         <col width="26" />
-        <col width="26" />
+        <col width="16" />
         <col width="94" />
         <col width="88" />
-        <col width="78" />
+        <col width="88" />
         <col width="*" />
       </colgroup>
       <thead>
         <tr>
           <th colspan="4">
-            <a href="#">한글명</a>
+            <a>한글명</a>
           </th>
           <th>
-            <a href="#">
-              현재가 <img src={stateImg.none} alt="" />
-            </a>
+            <a>희망구매가</a>
           </th>
           <th>
-            <a href="#">
-              거래대금 <img src={stateImg.down} alt="" />
-            </a>
+            <a>희망판매가</a>
           </th>
         </tr>
       </thead>
