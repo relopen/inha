@@ -78,7 +78,7 @@ const Infomation = () => {
               <img src={state?.model.thumbnail} />
             </div>
             <div className={styles["Text"]}>
-              <p>{state?.model.memo || "설명이 등록되지 않았습니다."}</p>
+              <p>{state?.model.description || "설명이 등록되지 않았습니다."}</p>
             </div>
           </div>
         </div>

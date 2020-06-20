@@ -25,8 +25,8 @@ const News = () => {
       <ArticleHeader>
         <ArticleSelect title="최신 뉴스" description="by hypebeast.kr" />
       </ArticleHeader>
-      <div className={styles["Body"]}>
-        <Scroll height={571}>
+      <Scroll height={571}>
+        <div className={styles["Body"]}>
           <div className={styles["News"]}>
             {state?.map((news) => {
               console.log(news);
@@ -62,8 +62,8 @@ const News = () => {
               );
             })}
           </div>
-        </Scroll>
-      </div>
+        </div>
+      </Scroll>
     </article>
   );
 };
