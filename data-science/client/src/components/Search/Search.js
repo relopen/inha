@@ -10,7 +10,7 @@ const Search = ({ value, onChange, onClear }) => {
       <input
         ref={inputRef}
         type="text"
-        placeholder="코인명/심볼검색"
+        placeholder="신발 이름 / 키워드"
         value={value}
         onChange={onChange}
       />

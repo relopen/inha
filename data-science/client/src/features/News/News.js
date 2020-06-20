@@ -29,7 +29,6 @@ const News = () => {
         <div className={styles["Body"]}>
           <div className={styles["News"]}>
             {state?.map((news) => {
-              console.log(news);
               return (
                 <>
                   <div className={styles["NewsContainer"]}>
