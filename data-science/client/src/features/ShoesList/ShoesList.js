@@ -30,7 +30,7 @@ const ShoesList = () => {
 
   useEffect(() => {
     if (shoeses && shoeses.length > 0 && !shoes) {
-      dispatch(actions.shoes.fetchShoes(shoeses[1]));
+      dispatch(actions.shoes.fetchShoes(shoeses[0]));
     }
   }, [shoeses, shoes]);
 
