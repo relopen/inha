@@ -15,7 +15,10 @@ const AnalyticsPage = () => {
         <Infomation />
         <News />
       </section>
-      <section className={styles["Section--right"]}>
+      <section
+        className={styles["Section--right"]}
+        style={{ position: "sticky", top: 0 }}
+      >
         <ShoesList />
       </section>
     </>

@@ -10,17 +10,7 @@ const News = () => {
   return (
     <article>
       <ArticleHeader>
-        <ArticleSelect
-          title="최신 뉴스"
-          description={
-            <>
-              by{" "}
-              <a href="https://hypebeast.kr/" target="_blank">
-                hypebeast.kr
-              </a>
-            </>
-          }
-        />
+        <ArticleSelect title="최신 뉴스" description="by hypebeast.kr" />
       </ArticleHeader>
       <div>뉴스정보</div>
     </article>

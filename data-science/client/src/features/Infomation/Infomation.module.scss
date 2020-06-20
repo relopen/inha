@@ -4,3 +4,126 @@
     top: 0;
     max-width: 280px;
 }
+
+.Body {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 20px 20px 30px;
+    height: 572px;
+    overflow: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.Title {
+    position: relative;
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:first-child {
+        margin-top: 0;
+        line-height: 26px;
+    }
+
+    .Links {
+        position: absolute;
+        right: 0;
+        top: -2px;
+        font-size: 0;
+
+        a { 
+            display: inline-block;
+            width: 76px;
+            height: 26px;
+            line-height: 24px;
+            margin: 0 0 0 4px;
+            border: 1px solid #d2d3d7;
+            border-radius: 2px;
+            font-size: 12px;
+            font-family: 돋움,Dotum,Noto Sans KR,sans-serif;
+            font-weight: 400;
+            text-align: center;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            vertical-align: top;
+        }
+    }
+}
+
+.Desc {
+    margin-top: 13px;
+
+    .Image {
+        float: left;
+        width: 300px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .Text {
+        float: left;
+        width: calc(100% - 300px - 10px);
+        padding-left: 10px;
+    }
+
+    p {
+        margin-top: 12px;
+        line-height: 20px;
+        font-size: 12px;
+        font-family: 돋움,Dotum,Noto Sans KR,sans-serif,Arial,Helvetica;
+        color: #666;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.TableLayout {
+    margin-top: 13px;
+    border-top: 2px solid #f1f1f4;
+    border-bottom: 1px solid #f1f1f4;
+
+    table {
+        width: 100%;
+    }
+
+    tr {
+        &:last-child {
+            td, th {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    th {
+        background: #f9fafc;
+        font-size: 12px;
+        color: #666;
+        
+        line-height: 18px;
+        padding: 8px 15px;
+        border-bottom: 1px solid #f1f1f4;
+        text-align: left;
+        height: auto;
+        word-break: break-all;
+    }
+
+    td {
+        border-top: none;
+        font-size: 12px;
+        font-family: 돋움,Dotum,Noto Sans KR,sans-serif,Arial,Helvetica;
+    
+
+        line-height: 18px;
+        padding: 8px 15px;
+        border-bottom: 1px solid #f1f1f4;
+        text-align: left;
+        height: auto;
+        word-break: break-all;
+    }
+}

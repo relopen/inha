@@ -1,16 +1,18 @@
 import React, { useRef, useEffect, useState } from "react";
 
-import styles from "./ProductTable.module.scss";
+import styles from "./Scroll.module.scss";
 
-const ScrollBody = ({ children, offsetTop }) => {
+const Scroll = ({ children, height, offsetTop }) => {
   const containerRef = useRef();
   const [wrapperHeight, setWrapperHeight] = useState(0);
 
   useEffect(() => {
     const getWrapperHeight = () => {
       const position = containerRef.current.getBoundingClientRect();
-      const height = window.innerHeight - position.top - 10 - (offsetTop || 0);
-      setWrapperHeight(height);
+      const h = height
+        ? height
+        : window.innerHeight - position.top - 10 - (offsetTop || 0);
+      setWrapperHeight(h);
     };
 
     getWrapperHeight();
@@ -29,4 +31,4 @@ const ScrollBody = ({ children, offsetTop }) => {
   );
 };
 
-export default ScrollBody;
+export default Scroll;
